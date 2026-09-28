@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "dashboard": "Tableau de bord",
+    "reservations": "Réservations",
+    "rooms": "Salles",
+    "equipment": "Équipements",
+    "statistics": "Statistiques",
+    "administration": "Administration"
+  }
+}

@@ -1,0 +1,31 @@
+# Tests run against an in-memory database with dummy Azure values:
+# no external service or secret is required.
+spring:
+  datasource:
+    url: jdbc:h2:mem:meetspace;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  cloud:
+    azure:
+      active-directory:
+        enabled: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost
+
+azure:
+  graph:
+    tenant-id: test-tenant
+    client-id: test-client
+    client-secret: test-secret
+    domain: example.onmicrosoft.com
+
+app:
+  cors:
+    allowed-origins: http://localhost:3000

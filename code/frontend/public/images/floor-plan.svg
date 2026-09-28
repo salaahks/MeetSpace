@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Inter, Arial, sans-serif">
+  <title>Sample office floor plan</title>
+  <rect width="1200" height="800" fill="#ffffff"/>
+  <g fill="#f8fafc" stroke="#334155" stroke-width="6">
+    <rect x="40" y="40" width="1120" height="720" rx="8"/>
+  </g>
+  <!-- Rooms -->
+  <g fill="#eef2ff" stroke="#334155" stroke-width="4">
+    <rect x="40" y="40" width="300" height="240"/>
+    <rect x="340" y="40" width="220" height="240"/>
+    <rect x="560" y="40" width="220" height="240"/>
+    <rect x="780" y="40" width="380" height="240"/>
+    <rect x="40" y="520" width="260" height="240"/>
+    <rect x="300" y="520" width="260" height="240"/>
+    <rect x="900" y="520" width="260" height="240"/>
+  </g>
+  <!-- Core: stairs, lifts, restrooms -->
+  <g fill="#e2e8f0" stroke="#334155" stroke-width="4">
+    <rect x="560" y="520" width="340" height="240"/>
+  </g>
+  <!-- Corridor -->
+  <rect x="44" y="284" width="1112" height="232" fill="#f1f5f9"/>
+  <!-- Doors -->
+  <g stroke="#f1f5f9" stroke-width="8">
+    <line x1="160" y1="280" x2="220" y2="280"/>
+    <line x1="420" y1="280" x2="480" y2="280"/>
+    <line x1="640" y1="280" x2="700" y2="280"/>
+    <line x1="940" y1="280" x2="1000" y2="280"/>
+    <line x1="140" y1="520" x2="200" y2="520"/>
+    <line x1="400" y1="520" x2="460" y2="520"/>
+    <line x1="1000" y1="520" x2="1060" y2="520"/>
+    <line x1="700" y1="520" x2="760" y2="520"/>
+  </g>
+  <!-- Furniture: meeting tables -->
+  <g fill="#cbd5e1">
+    <rect x="110" y="120" width="160" height="70" rx="10"/>
+    <rect x="400" y="125" width="100" height="60" rx="10"/>
+    <rect x="620" y="125" width="100" height="60" rx="10"/>
+    <rect x="850" y="110" width="240" height="90" rx="12"/>
+    <rect x="100" y="600" width="140" height="70" rx="10"/>
+    <rect x="360" y="600" width="140" height="70" rx="10"/>
+    <circle cx="1030" cy="640" r="45"/>
+  </g>
+  <!-- Labels -->
+  <g fill="#334155" font-size="22" font-weight="600" text-anchor="middle">
+    <text x="190" y="250">Salle Atlas</text>
+    <text x="450" y="250">Salle Orion</text>
+    <text x="670" y="250">Salle Vega</text>
+    <text x="970" y="250">Auditorium</text>
+    <text x="170" y="730">Salle Nova</text>
+    <text x="430" y="730">Salle Lyra</text>
+    <text x="1030" y="730">Focus room</text>
+  </g>
+  <g fill="#64748b" font-size="20" text-anchor="middle">
+    <text x="730" y="645">Ascenseurs · Escaliers · Sanitaires</text>
+    <text x="600" y="408" letter-spacing="6">COULOIR</text>
+  </g>
+</svg>

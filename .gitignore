@@ -1,0 +1,28 @@
+# Dependencies & build output
+node_modules/
+target/
+.next/
+out/
+build/
+dist/
+
+# Secrets — only the *.example templates are committed
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+application-local.yml
+application-local.properties
+**/k8s/secrets.yaml
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Logs
+*.log

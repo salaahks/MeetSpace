@@ -1,0 +1,36 @@
+# NEXT_PUBLIC_* variables are inlined at build time (see infra/nodejs/Dockerfile),
+# so the frontend container needs no runtime configuration.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meetspace-frontend
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meetspace-frontend
+  template:
+    metadata:
+      labels:
+        app: meetspace-frontend
+    spec:
+      imagePullSecrets:
+      - name: registry-secret
+      containers:
+      - name: meetspace-frontend
+        image: registry.local/meetspace/frontend:latest
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            memory: 512Mi
+        readinessProbe:
+          httpGet:
+            path: /login
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 10
